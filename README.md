@@ -98,10 +98,10 @@ print(dir(random))
 '__file__', '__loader__', '__name__', '__package__', '__spec__', '_accumulate', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_inst', '_log', '_os', '_pi', '_random', '_repeat', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
 ```
 
-# 외장함수
+# 4. 외장함수
 기본적으로 import를 통해 불러서 사용하는 함수
 
-## 1. glob : 경로 내의 폴더 / 파일 목록 조회
+### 1. glob : 경로 내의 폴더 / 파일 목록 조회
 ```
 import glob
 print(glob.glob("*.py")) # .py로 끝나는 모든 폴더를 조회
@@ -109,7 +109,7 @@ print(glob.glob("*.py")) # .py로 끝나는 모든 폴더를 조회
 ['11-1 모듈.py', '11-10 퀴즈 정답.py', '11-2 패키지.py', '11-5 패키지, 모듈 위치.py', '11-6 pip install.py', '11-7 내장함수.py', '11-9 퀴즈.py', 'byme.py', 'theather_module.py']
 ```
 
-## 2. os : 운영체제에서 제공하는 기본 기능
+### 2. os : 운영체제에서 제공하는 기본 기능
 
 ```
 import os
@@ -131,7 +131,7 @@ else:
                               폴더를 삭제했습니다.
 ```
 
-## 3. time : 시간 관련 함수
+### 3. time : 시간 관련 함수
 
 - .localtime() : 현지 시간을 알려주는 함수
 - .strftime("%Y-%m-%d %H:%M:%S") : 보다 간단하게 시간을 출력하는 방법(대문자나 부호를 확실하게 입력해야함)
@@ -144,7 +144,7 @@ time.struct_time(tm_year=2022, tm_mon=8, tm_mday=31, tm_hour=12, tm_min=3, tm_se
 2022-08-31 12:03:14
 ```
 
-## 4. datetime 
+### 4. datetime 
 - 날짜를 보다 간단하게 출력하는 방법
 - .date.today() : 오늘 날짜를 알려주는 함수
 
@@ -155,7 +155,7 @@ print("오늘 날짜는", datetime.date.today())
 오늘 날짜는 2022-08-31
 ```
 
-## 5. timedelta
+### 5. timedelta
 - 두 날짜 사이의 간격 측정
 ```
 today = datetime.date.today() # 오늘 날짜 저장
