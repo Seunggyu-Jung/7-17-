@@ -2,10 +2,10 @@
 # 모듈: 파이썬에서 함수나 클래스 같은 정보를 담고있는 파일을 의미
 
 # 일반적으로 모듈을 끌어오는 방법
-#import theather_module  
-#theather_module.price(3)
-#theather_module.price_morinig(4)
-#theather_module.price_soldier(5)
+import theather_module  
+theather_module.price(3)
+theather_module.price_morinig(4)
+theather_module.price_soldier(5)
 
 # 긴 모듈의 이름을 간단하게 재정의 하여 나타내는 방법
 #import theather_module as mv 
